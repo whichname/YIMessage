@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一短信</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="drafts">草稿箱</string>
+	<string name="contacts_group">群组</string>
+	<string name="sent">已发送</string>
+	<string name="edit_message">编辑短信</string>
+	<string name="see_all_contacts">查看所有联系人</string>
+	<string name="please_input_msg">请输入短信内容</string>
+	<string name="save">保  存</string>
+	<string name="send">发  送</string>
+	<string name="now_input_zero">当前已输入0字</string>
+	<string name="select_contact">选择联系人</string>
+	<string name="select_group">选择群组</string>
+	<string name="OK">OK</string>
+	<string name="kong">空</string>
+	<string name="add_msg">添加短信</string>
+	<string name="add_group">添加分组</string>
+	<string name="please_input_title">请输入标题</string>
+	<string name="title">标题</string>
+	<string name="cancel">取消</string>
+	<string name="sure">确定</string>
+	<string name="contact">联系人</string>
+	<string name="rs">反选</string>
+	<string name="no_sent">您暂时还没有使用过一短信发送过信息哦\n赶快去试试吧~~</string>
+	<string name="setting">设置</string>
+	<string  name="local_version">当前版本:</string>
+	<string name="update_application">更新程序</string>
+	<string name="about_author">关于作者:\n邮箱:wzm625278436@qq.com</string>
+</resources>

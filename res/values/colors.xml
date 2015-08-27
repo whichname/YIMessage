@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title_bg">#424b50</color>
+    <color name="layout_bg">#ffffff</color>
+    <color name="iamgeview_pressed">#222b30</color>
+    <color name="divider_bg">#424b50</color>
+    <color name="write">#ffffff</color>
+    <color name="button_pressed">#f3f8f1</color>
+    <color name="bottom_bg">#AA424b50</color>
+    <color name="letter_tv_bg">#55d7ecf1</color>
+</resources>

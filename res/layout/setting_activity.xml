@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout 
+        android:background="@color/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        >
+        <ImageView 
+            android:id="@+id/backup_settingactivity"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/imageview_bg"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:layout_toRightOf="@id/backup_settingactivity"
+            android:text="@string/setting"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:textColor="@color/layout_bg"
+            android:gravity="center_vertical"
+            />
+        
+    </RelativeLayout>
+
+    <TextView 
+        android:id="@+id/about_settingactivity"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="30dip"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:padding="5dip"
+		android:textColor="#000000"
+		android:textSize="20dp"
+		android:text="@string/about_author"
+        />
+    
+    	<Button
+    	    android:id="@+id/update_settingactivity"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:text="@string/update_application"
+    	    android:layout_margin="10dip"
+    	    android:background="@color/title_bg"
+    	    style="@style/button_text"
+    />
+</LinearLayout>

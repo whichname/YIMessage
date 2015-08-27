@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_bg"
+        android:padding="2dip"
+        >
+        
+        <ImageView 
+            android:id="@+id/backup_selectcontact_activity"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        
+        <TextView 
+            android:layout_toRightOf="@id/backup_selectcontact_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:text="@string/select_contact"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:textColor="@color/layout_bg"
+            />
+        
+        <TextView 
+            android:id="@+id/ok_selectcontact_activity"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:text="@string/OK"
+            android:textColor="@color/layout_bg"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:gravity="center"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        <TextView 
+            android:id="@+id/RS_selectcontact_activity"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_toLeftOf="@id/ok_selectcontact_activity"
+            android:text="@string/rs"
+            android:background="@drawable/imageview_bg"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:textColor="@color/layout_bg"
+            android:gravity="center"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bg"
+        >
+           
+		 
+        <ListView 
+        android:id="@+id/listview_selectcontact_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+        <TextView 
+            android:id="@+id/textdialog_selectcontact_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textSize="50dp"
+            android:textColor="#000"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        
+        <from.mrw.yimessage.SideBar
+            android:id="@+id/sidebar_selectcontact_activity"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+		/>
+        
+    </RelativeLayout>
+</LinearLayout>

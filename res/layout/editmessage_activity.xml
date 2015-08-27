@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_bg"
+        android:padding="2dip"
+        >
+        <ImageView 
+            android:id="@+id/backup_editmessageactivity"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        <TextView 
+            android:layout_toRightOf="@id/backup_editmessageactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:text="@string/edit_message"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:textColor="@color/layout_bg"
+            />
+            
+        <ImageView 
+            android:id="@+id/delete_editmessageactivity"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/delete"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/layout_bg"
+        android:scrollbars="none"
+        >
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dip"
+            android:background="@color/layout_bg" >
+            
+            <EditText 
+                android:id="@+id/msg_editmessageactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/please_input_msg"
+                android:textColor="@color/title_bg"
+                android:textSize="@dimen/radiobutton_text_size"
+                />
+            <TextView 
+                android:id="@+id/textcount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title_bg"
+                android:textSize="@dimen/radiobutton_text_size"
+                android:text="@string/now_input_zero"
+                android:layout_marginTop="7dip"
+                
+                />
+            <Button 
+                android:id="@+id/save_editmessageactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+				style="@style/button_text"
+				android:background="@color/title_bg"
+				android:layout_marginTop="20dip"
+				android:padding="7dip"
+                />
+            
+            <Button 
+                android:id="@+id/send_editMessageactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                style="@style/button_text"
+                android:background="#ff6765"
+                android:layout_marginTop="20dip"
+                android:padding="7dip"
+                />
+            
+            
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_bg"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_bg"
+        android:padding="2dip"
+        >
+        <ImageView 
+            android:id="@+id/backup_sent"
+            android:layout_alignParentLeft="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/backup"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/title_sent" 
+            android:layout_toRightOf="@id/backup_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:gravity="center"
+            android:text="@string/kong"
+            android:textSize="25sp"
+            android:textColor="@color/layout_bg"
+            />
+            <ImageView 
+            android:id="@+id/send_sent"
+            android:layout_alignParentRight="true"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/send"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        <ImageView 
+            android:id="@+id/delete_sent"
+            android:layout_toLeftOf="@id/send_sent"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@drawable/delete"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/msg_content_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kong"
+        style="@style/system_text_one"
+        android:padding="12dip"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/divider_bg"
+        />
+	
+    <ListView 
+        android:id="@+id/receiver_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

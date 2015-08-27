@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_bg">
+        
+        <TextView 
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:textColor="@color/layout_bg"
+            android:layout_marginLeft="40dip"
+            android:gravity="center"
+            />
+        
+        <ImageView 
+            android:id="@+id/setting"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/setting"
+            android:background="@drawable/imageview_bg"
+            android:clickable="true"
+            />
+        
+    </RelativeLayout>
+    
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_bg"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        
+        <RadioButton 
+            android:id="@+id/drafts"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:background="@drawable/radiobuttonbg"
+            android:textColor="@color/radiobutton_text_bg"
+            android:text="@string/drafts"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:padding="5dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:checked="true"
+            />
+        
+        <TextView 
+            android:id="@+id/divider_one"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:background="@color/layout_bg"
+            android:visibility="gone"
+            />
+        
+        <RadioButton 
+            android:id="@+id/contacts_group"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:background="@drawable/radiobuttonbg"
+            android:textColor="@color/radiobutton_text_bg"
+            android:text="@string/contacts_group"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:padding="5dip"
+            android:gravity="center"
+            />
+        
+        <TextView 
+            android:id="@+id/divider_two"
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:background="@color/layout_bg"
+            />
+        
+        <RadioButton 
+            android:id="@+id/sent"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:background="@drawable/radiobuttonbg"
+            android:textColor="@color/radiobutton_text_bg"
+            android:text="@string/sent"
+            android:textSize="@dimen/radiobutton_text_size"
+            android:padding="5dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            />
+        
+        </RadioGroup>
+    
+    	<android.support.v4.view.ViewPager
+    	    android:id="@+id/viewpager"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="0dip"
+    	    android:layout_weight="1.0"
+    	    android:background="@color/layout_bg"
+    	    />
+    
+    
+</LinearLayout>
